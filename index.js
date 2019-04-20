@@ -1,3 +1,6 @@
 require('./prototypes/zipArray')
+const euclidean = require('./measurable/euclidean')
 
-console.log([1,2].zip([1,2]))
+console.log(euclidean([1,2], [1,4]))
+
+//console.log([1,2,3].sum())
