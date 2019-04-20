@@ -8,9 +8,9 @@ function euclidean_squared (u, v = null){
 
     if (u.length !== v.length) throw Error("The arrays must be the same length")
 
-    let zipped = u.zip(v)
-
-    return (zipped[0][1]- zipped[0][0])**2 + (zipped[1][1] - zipped[1][0])**2
+    return u.zip(v).reduce((acc, arr) => {
+        return acc + (arr[1] - arr[0])**2
+    }, 0)
 }
 
 module.exports = euclidean_squared
