@@ -11,14 +11,27 @@ test('Prototype zip test', () => {
 const arr1 = [1, 2]
 const arr2 = [1, 4]
 
-test('Euclidean square Distance', () => {
+test('Euclidean square Distance test', () => {
     const expected = 4
     const result = measurable.euclideanSquared(arr1, arr2)
     expect(result).toBe(expected);
 })
 
-test('Euclidean Distance', () => {
+test('Euclidean Distance test', () => {
     const expected = 2
     const result = measurable.euclidean(arr1, arr2)
     expect(result).toBe(expected);
+})
+
+test('Euclidean Distance Norm test', () => {
+    const array = [0, 1]
+    const expected = 1
+    const result = measurable.euclidean(array)
+    expect(result).toBe(expected);
+})
+
+test('Cosine similarity test', () => {
+    const expected = 0.9761870601839528;
+    const result = measurable.cosineSimilarity(arr1, arr2)
+    expect(result).toBeCloseTo(expected, 10)
 })

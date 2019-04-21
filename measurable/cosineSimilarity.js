@@ -1,5 +1,5 @@
 require("../prototypes/zipArray")
-require("./euclidean")
+const euclidean = require("./euclidean")
 
 module.exports =
 
@@ -8,6 +8,8 @@ module.exports =
  * 
  * Given 2 vectors u and v. similarity = cos (x) = (u . v) / (||u|| * ||v||)
  * 
+ * source: https://en.wikipedia.org/wiki/Cosine_similarity#Definition
+ * 
  * Call Sequence:
  *  - cosineSimilarity(u, v) -> Number
  * 
@@ -15,7 +17,7 @@ module.exports =
  * @param {Array} v - An array of numbers
  * 
  * @returns 
- *  - Normalized product of vector u and vector b
+ * - Normalized product of vector u and vector b
  * @throws: 
  * - TypeError -> Not inserted an array
  * - Error -> The length of 2 vectors don't match

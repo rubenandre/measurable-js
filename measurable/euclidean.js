@@ -5,11 +5,11 @@ module.exports =
 /**
  * Calculate the ordinary distance between 2 vectors (u and v)
  * 
+ * source: http://en.wikipedia.org/wiki/Euclidean_distance#N_dimensions
+ * 
  * Call sequence:
  *      * euclidean(u) -> Number
  *      * euclidean(u, v) -> Number
- * 
- * source: http://en.wikipedia.org/wiki/Euclidean_distance#N_dimensions
  * 
  * @param {Array} u -> An array of numbers
  * @param {Array} v -> An array of numbers (optional)
@@ -21,6 +21,6 @@ module.exports =
  * - Error -> The length of 2 vectors don't match
  */
 
-function euclidean(u, v = null){
+function euclidean(u, v){
     return Math.sqrt(euclidean_squared(u, v))
 }
