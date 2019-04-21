@@ -1,8 +1,6 @@
 require("../prototypes/zipArray")
 const euclidean = require("./euclidean")
 
-module.exports =
-
 /**
  * Calculate the cos-similarity between the orientation of two vectors.
  * 
@@ -33,3 +31,5 @@ function cosineSimilarity(u, v){
 
     return product / (euclidean(u) * euclidean(v))
 }
+
+module.exports = cosineSimilarity

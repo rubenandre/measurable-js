@@ -1,7 +1,5 @@
 require('../prototypes/zipArray')
 
-module.exports =
-
 /**
  * 
  * Calculate chebyshev distance between to vectors
@@ -32,3 +30,5 @@ function chebyshev(u, v) {
 
     return Math.max(...abs_differences)
 }
+
+module.exports = chebyshev

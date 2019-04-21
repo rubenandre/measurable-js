@@ -47,3 +47,11 @@ test('Chebyshev distance test', () => {
     const result = measurable.chebyshev(arr1, arr2)
     expect(result).toBe(expected)
 })
+
+test('Hamming test', () => {
+    const s1 = "Jail"
+    const s2 = "Nail"
+    const expected = 1
+    const result = measurable.hamming(s1, s2)
+    expect(result).toEqual(expected)
+})

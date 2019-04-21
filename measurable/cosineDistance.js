@@ -1,7 +1,5 @@
 const cosineSimilarity = require("./cosineSimilarity")
 
-module.exports =
-
 /**
  * Calculate the cosine distance between the orientation of two vectors.
  * 
@@ -23,3 +21,5 @@ module.exports =
 function cosineDistance(u, v){
     return 1 - cosineSimilarity(u, v)
 }
+
+module.exports = cosineDistance
