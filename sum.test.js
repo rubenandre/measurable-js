@@ -35,3 +35,9 @@ test('Cosine similarity test', () => {
     const result = measurable.cosineSimilarity(arr1, arr2)
     expect(result).toBeCloseTo(expected, 10)
 })
+
+test('Cosine ditsnace test', () => {
+    const expected = 0.02381293981604715;
+    const result = measurable.cosineDistance(arr1, arr2)
+    expect(result).toBeCloseTo(expected, 10)
+})
