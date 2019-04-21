@@ -1,4 +1,4 @@
-const euclidean_squared = require('./euclidean_squared')
+const euclidean_squared = require('./euclideanSquared')
 
 module.exports = 
 

@@ -13,7 +13,7 @@ const arr2 = [1, 4]
 
 test('Euclidean square Distance', () => {
     const expected = 4
-    const result = measurable.euclidean_squared(arr1, arr2)
+    const result = measurable.euclideanSquared(arr1, arr2)
     expect(result).toBe(expected);
 })
 

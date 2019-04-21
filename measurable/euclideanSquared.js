@@ -4,8 +4,8 @@ require("../prototypes/zipArray")
  * Calculate the squared distance between 2 vectors (u and v)
  * 
  * Call sequence:
- *      * euclidean_squared(u) -> Number
- *      * euclidean_squared(u, v) -> Number
+ *      * euclideanSquared(u) -> Number
+ *      * euclideanSquared(u, v) -> Number
  * 
  * source: http://en.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance
  * 
@@ -18,7 +18,7 @@ require("../prototypes/zipArray")
  * - TypeError -> Not inserted an array
  * - Error -> The length of 2 vectors don't match
  */
-function euclidean_squared (u, v = null){
+function euclideanSquared (u, v = null){
     if (!(Array.isArray(u) && Array.isArray(v))) throw new TypeError("The arguments have to be arrays")
     
     if (v === null) v = new Array(u.length).fill(0)
@@ -30,4 +30,4 @@ function euclidean_squared (u, v = null){
     }, 0)
 }
 
-module.exports = euclidean_squared
+module.exports = euclideanSquared
