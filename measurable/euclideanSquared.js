@@ -18,9 +18,7 @@ require("../prototypes/zipArray")
  * - TypeError -> Not inserted an array
  * - Error -> The length of 2 vectors don't match
  */
-function euclideanSquared (u, v = null){
-    if (v === null) v = new Array(u.length).fill(0)
-
+function euclideanSquared (u, v = new Array(u.length).fill(0)){
     if (!(Array.isArray(u) && Array.isArray(v))) throw new TypeError("The arguments have to be arrays")
     
     if (u.length !== v.length) throw Error("The arrays must be the same length")
