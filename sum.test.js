@@ -36,8 +36,14 @@ test('Cosine similarity test', () => {
     expect(result).toBeCloseTo(expected, 10)
 })
 
-test('Cosine ditsnace test', () => {
+test('Cosine distance test', () => {
     const expected = 0.02381293981604715;
     const result = measurable.cosineDistance(arr1, arr2)
     expect(result).toBeCloseTo(expected, 10)
+})
+
+test('Chebyshev distance test', () => {
+    const expected = 2
+    const result = measurable.chebyshev(arr1, arr2)
+    expect(result).toBe(expected)
 })

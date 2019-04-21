@@ -12,6 +12,12 @@ module.exports =
  * 
  * @param {Array} u - Array of numbers
  * @param {Array} v - Array of numbers
+ * 
+ * @returns 
+ * - Normalized product of vector u and vector b
+ * @throws: 
+ * - TypeError -> Not inserted an array
+ * - Error -> The length of 2 vectors don't match
  */
 
 function cosineDistance(u, v){
