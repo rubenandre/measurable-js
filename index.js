@@ -1,6 +1,10 @@
 require('./prototypes/zipArray')
 const euclidean = require('./measurable/euclidean')
+const euclidean_squared = require('./measurable/euclidean_squared')
 
-console.log(euclidean([1,2], [1,4]))
+const measurable = {
+    euclidean: euclidean,
+    euclidean_squared: euclidean_squared
+}
 
-//console.log([1,2,3].sum())
+module.exports = measurable

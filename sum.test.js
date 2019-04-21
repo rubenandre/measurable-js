@@ -1,7 +1,4 @@
 const measurable = require('./index')
-require('./prototypes/zipArray')
-const euclidean_squared = require('./measurable/euclidean_squared')
-const euclidean = require('./measurable/euclidean')
 
 test('Prototype zip test', () => {
     const array1 = new Array(1, 2, 3)
@@ -16,12 +13,12 @@ const arr2 = [1, 4]
 
 test('Euclidean square Distance', () => {
     const expected = 4
-    const result = euclidean_squared(arr1, arr2)
+    const result = measurable.euclidean_squared(arr1, arr2)
     expect(result).toBe(expected);
 })
 
 test('Euclidean Distance', () => {
     const expected = 2
-    const result = euclidean(arr1, arr2)
+    const result = measurable.euclidean(arr1, arr2)
     expect(result).toBe(expected);
 })
