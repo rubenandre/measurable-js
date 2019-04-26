@@ -8,7 +8,7 @@ module.exports =
 Array.prototype.zip = function (a) {
     if (!Array.isArray(a)) throw new TypeError("The argument have to be an array")
     if (this.length != a.length) throw new Error("The arrays must be the same length")
-    arr = new Array(0)
+    let arr = new Array(0)
     for (let i = 0; i < a.length; i++){
         arr.push([this[i], a[i]])
     }

@@ -24,7 +24,7 @@ function chebyshev(u, v) {
     if (!(Array.isArray(u) && Array.isArray(v))) throw new TypeError("The arguments have to be arrays")
     if (u.length !== v.length) throw Error("The arrays must be the same length")
 
-    abs_differences = u.zip(v).map((a) => {
+    let abs_differences = u.zip(v).map((a) => {
         return Math.abs(a[1] - a[0])
     })
 
